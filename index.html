@@ -16,7 +16,7 @@
       </a>
       <nav class="flex flex-wrap">
         <div class="flex gap-8 items-center">
-          <ul class="flex gap-8 items-center">
+          <ul class="flex gap-8 items-center max-sm:flex-wrap">
             <li><a class="font-semibold hover:text-yellow-300 ease-linear" href="">Products</a></li>
             <li><a class="font-semibold hover:text-yellow-300 ease-linear" href="">Solutions</a></li>
             <li><a class="font-semibold hover:text-yellow-300 ease-linear" href="">Resources</a></li>
@@ -24,7 +24,7 @@
           </ul>
           <div class="space-x-4 flex-wrap container">
             <button type="submit"
-              class="px-7 py-3 bg-yellow-300 text-blue-900 font-semibold hover:bg-yellow-200 rounded">Log
+              class="max-sm:flex-wrap px-7 py-3 bg-yellow-300 text-blue-900 font-semibold hover:bg-yellow-200 rounded">Log
               In</button>
             <button type="submit"
               class=" max-md:hidden px-7 py-3 bg-blue-500 text-white font-semibold hover:bg-blue-400 rounded ">Try
@@ -38,9 +38,9 @@
     <main class="relative">
       <img class="absolute" src="pictures/Element.svg" alt="">
       <!-- начало -->
-      <div class="bg-blue-900  pr-40 ps-40 pt-40 flex items-center justify-between">
+      <div class="bg-blue-900 px-32 max-sm:px-5 mx-auto pt-40 flex items-center justify-between">
         <!-- текст-блок -->
-        <div class="relative z-10 ">
+        <div class="relative z-10 max-sm:justify-center">
           <h1 class="text-white text-5xl font-semibold">Get More Done with <br> whitepace</h1>
           <p class="text-slate-200 pt-4 text-lg pb-10">Project management software that enables your teams to
             collaborate,
@@ -59,12 +59,12 @@
         <!-- картинка блок -->
         <div class="z-10 pb-20">
           <a href="">
-            <img src="pictures/pngegg.png" alt="picture">
+            <img class="max-sm:hidden" src="pictures/pngegg.png" alt="picture">
           </a>
         </div>
       </div>
       <!-- форма -->
-      <div class="pt-40 ps-40 pr-40 flex justify-between items-center">
+      <div class="pt-40 mx-auto flex justify-between items-center px-4">
         <div class="pb-40">
           <img class="opacity-50 max-sm:hidden" src="pictures/WorkTogetherImage.svg" alt="workpicture">
         </div>
@@ -137,7 +137,7 @@
         </div>
         <!-- price -->
         <div class="pt-5">
-          <div class="flex justify-between">
+          <div class="flex justify-between max-sm:flex-wrap max-sm:justify-center">
             <!-- 1 cont -->
             <div class="border  p-5 rounded border-yellow-400">
               <h3 class="pb-2 text-2xl font-semibold">Free</h3>
