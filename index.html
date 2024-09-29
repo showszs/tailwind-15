@@ -10,11 +10,11 @@
 
 <body>
   <div class="container mx-auto">
-    <header class="flex justify-between items-center px-4 py-2 bg-blue-900 text-white">
+    <header class="flex flex-wrap justify-between items-center px-4 py-2 bg-blue-900 text-white">
       <a href="">
         <img class="w-32 h-16" src="pictures/Logo.svg" alt="logo">
       </a>
-      <nav>
+      <nav class="flex flex-wrap">
         <div class="flex gap-8 items-center">
           <ul class="flex gap-8 items-center">
             <li><a class="font-semibold hover:text-yellow-300 ease-linear" href="">Products</a></li>
@@ -22,12 +22,15 @@
             <li><a class="font-semibold hover:text-yellow-300 ease-linear" href="">Resources</a></li>
             <li><a class="font-semibold hover:text-yellow-300 ease-linear" href="">Pricing</a></li>
           </ul>
-          <button type="submit"
-            class="px-7 py-3 bg-yellow-300 text-blue-900 font-semibold hover:bg-yellow-200 rounded">Log
-            In</button>
-          <button type="submit" class="px-7 py-3 bg-blue-500 text-white font-semibold hover:bg-blue-400 rounded">Try
-            Whitepace
-            free &#8594;</button>
+          <div class="space-x-4 flex-wrap container">
+            <button type="submit"
+              class="px-7 py-3 bg-yellow-300 text-blue-900 font-semibold hover:bg-yellow-200 rounded">Log
+              In</button>
+            <button type="submit"
+              class=" max-md:hidden px-7 py-3 bg-blue-500 text-white font-semibold hover:bg-blue-400 rounded ">Try
+              Whitepace
+              free &#8594;</button>
+          </div>
         </div>
       </nav>
     </header>
@@ -63,11 +66,11 @@
       <!-- форма -->
       <div class="pt-40 ps-40 pr-40 flex justify-between items-center">
         <div class="pb-40">
-          <img class="opacity-50" src="pictures/WorkTogetherImage.svg" alt="workpicture">
+          <img class="opacity-50 max-sm:hidden" src="pictures/WorkTogetherImage.svg" alt="workpicture">
         </div>
         <div class="pb-50">
           <h2 class="relative font-semibold text-7xl z-10 top">Work together</h2>
-          <img class="ps-48 absolute" src="pictures/Elementtext.svg" alt="icontext">
+          <img class="ps-48" src="pictures/Elementtext.svg" alt="icontext">
           <form action="https://tests.fomenko.top/echo/index.php" method="GET" class="w-full rounded shadow-md p-5">
             <div class="pt-5">
               <label class="block text-lg mb-2" for="name">Name</label>
@@ -105,11 +108,10 @@
       <!-- between -->
       <div class="bg-blue-900 text-white pt-32 pb-32 relative">
         <img class="absolute opacity-40 -z-1 h-5/6 top-0" src="pictures/Group.svg" alt="bckground">
-        <div class="text-center">
-          <h2 class="font-semibold text-6xl z-10 pb-5">Your work, everywhere you are</h2>
-          <div class="relative">
-            <img class="absolute right-1 pr-60 -top-5 -z-1" src="pictures/Element2.svg" alt="icontext2">
-          </div>
+        <div class="text-center  px-4">
+          <h2 class="font-semibold text-6xl z-10 pb-5 relative">Your work, everywhere you are
+            <img class="absolute right-1 pr-60 -z-1" src="pictures/Element2.svg" alt="icontext2">
+          </h2>
           <span class="text-slate-200 text-lg">Access your notes from your computer, phone or tablet by
             synchronising
             with
@@ -124,10 +126,10 @@
         </div>
       </div>
       <!-- end between -->
-      <div class="pt-32 pb-32 relative">
+      <div class="pt-32 pb-32 relative px-4">
         <div class="text-center pb-10">
-          <h2 class="font-semibold text-6xl z-10 pb-5">Choose Your Plan
-            <img class="right-96 absolute" src="pictures/Elementtext.svg" alt="icontext3">
+          <h2 class="font-semibold text-6xl z-10 pb-5 relative">Choose Your Plan
+            <img class="right-96 absolute max-sm:hidden" src="pictures/Elementtext.svg" alt="icontext3">
           </h2>
           <span class="text-slate-900 text-lg">Whether you want to get organized, keep your personal life on track, or
             boost
